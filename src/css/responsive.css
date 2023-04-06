@@ -30,11 +30,13 @@
   .ladrilho .grande,
   .ladrilho .medio {
     width: 100%;
+    border-radius: 10px;
   }
 
   .ladrilho .pequeno,
   .ladrilho .pequeno.grao{
     width: 50%;
+    border-radius: 10px;
   }
 
   .rodape {
@@ -68,9 +70,15 @@
   }
 }
 @media (max-width: 425px) {
-  .cabecalho .logo {
-    display: block;
+  .cabecalho {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin: 0 auto;
+  }
+
+  .cabecalho ul {
+    padding-left: 0px;
   }
 
   .cabecalho nav {
@@ -80,7 +88,7 @@
   }
 
   .cabecalho nav ul li {
-    display: block;
+    display: flex;
   }
 
   .cabecalho nav ul li a {
@@ -99,6 +107,11 @@
   .secao-com-texto.onde-estamos p {
     font-size: 2rem;
   }
+
+  .rodape ul {
+    padding-left: 0px;
+  }
+
 }
 @media (max-width: 375px) {
     .ladrilho .pequeno,
